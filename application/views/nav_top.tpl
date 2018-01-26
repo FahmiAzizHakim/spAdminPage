@@ -20,13 +20,13 @@
                 <li><a href="#">Konfirmasi Agen</a></li>
               </ul>
             </li>
-            <li class="dropdown">
+           <!--  <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Content<span class="caret"></span></a>
-              <ul class="dropdown-menu" role="menu">
+              <ul class="dropdown-menu" role="menu"> -->
                 <!-- <li><a href="{$base_url}homepage">List Agen</a></li>
                 <li><a href="{$base_url}homepage/entri_agen">Daftar Agen</a></li> -->
-              </ul>
-            </li>
+              <!-- </ul> 
+            </li> -->
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Listing<span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
@@ -34,14 +34,14 @@
                 <li><a href="{$base_url}homepage/entri_agen">Daftar Agen</a></li> -->
               </ul>
             </li>
-            <li class="dropdown">
+            <!-- <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Laporan<span class="caret"></span></a>
-              <ul class="dropdown-menu" role="menu">
+              <ul class="dropdown-menu" role="menu"> -->
                 <!-- <li><a href="{$base_url}homepage">List Agen</a></li>
                 <li><a href="{$base_url}homepage/entri_agen">Daftar Agen</a></li> -->
-              </ul>
-            </li>
-            <li><a href="#">Entri User</a></li>
+              <!-- </ul>
+            </li> -->
+            <li class="{if $menu_group eq 'user'}active{/if}"><a href="{$base_url}user">Entri User</a></li>
           </ul>
           <!-- <form class="navbar-form navbar-left" role="search">
             <div class="form-group">
