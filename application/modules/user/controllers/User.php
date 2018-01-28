@@ -16,6 +16,16 @@ class User extends MY_Controller {
 	public function index()
 	{
 		
+		$data = $this->m_master->getListData('m_user_tbl')->result_array();
+    	$this->templates->assign( 'user', $data);
+    	$this->layout('entri_user', 'List User');
+	}
+
+	public function edit_password()
+	{
+		$data = $this->m_master->getListData('m_user_tbl')->result_array();
+    	$this->templates->assign( 'user', $data);
+    	$this->layout('edit_password', 'Edit User');
 	}
 
 }
